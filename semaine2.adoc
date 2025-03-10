@@ -1,0 +1,73 @@
+== Semaine 2 :
+Un des #objectifs# de la sae 2.03 est de nous #apprendre un langage de balisage# utile pour la crétion de documentation mais pas que.
+[%hardbreaks]
+Pour montrer ce que nous avons appris, nous avons fait ce rapport entièrement en #asciidoctor#, pour le moment il contient : 
+
+. du texte en gras 
+. de l'insertion de code source 
+. de l'insertion de lien cliquable 
+. des images avec modification de leur taille initiale 
+. un tableau complexe ( le semainier )
+. des listes 
+.. Ordonnée 
+.. non ordonnée 
+. un sommaire automatique
+
+
+
+Donc pour le rapport final, nous devons encore mettre en place : 
+
+
+* le css 
+** mettre une page de garde
+** changer la police d'écriture si possible 
+*** couleurs
+*** font-family
+* la gestion de multifichier 
+* refaire un tableau complexe 
+* refaire la mise en page des rapports à integrer dans le rapport final avec les connaissances apprises en plus.
+
+
+Nous avions de choix à notre disposition #2 formats# au choix:
+
+<<<
+
+* Le format https://daringfireball.net/projects/markdown/[((Markdown))] dans sa version étendue par le logiciel https://pandoc.org/MANUAL.html#pandocs-markdown[((pandoc))]
+* Le format https://docs.asciidoctor.org/[((Asciidoctor))] (version étendue du format AsciiDoc) 
+
+Nous avons fini par choisir le format #Asciidoctor# car selon notre professeur il est plus complet et demande moins d'extension que le *Markdown*.
+
+=== Installation de Asccidoctor
+Avant d'installer *Asccidoctor* nous avons du installer le *RubyInstaller*.
+Pour cela nous sommes simplement aller sur le site de https://rubyinstaller.org/downloads/[((RubyInstaller))] et avons cliquer sur installer, cela ne fonctionne que pour *Windows*.
+Pour *Debian* il suffit de taper la commande :
+`sudo apt-get install ruby-full`
+
+Ensuite une fois ruby installé nous avons dû éxecuter une commande dans le *RubyInstaller*.
+`gem install asciidoctor`
+
+Afin de vérifier la réussite de l'installation il a fallu faire : `asciidoctor --version`
+
+=== Installation de asciidoctor-pdf
+Pour installer *asciidoctor-pdf* nous avons dû éxecuter une commande dans le *RubyInstaller*. `gem install asciidoctor-pdf`
+
+Asciidoctor-PDF est une extension d'Asciidoctor qui permet de générer des documents au format PDF à partir de contenu rédigé en AsciiDoc.
+
+=== Commandes utile 
+Commande pour convertir un fichier en asciidoctor en pdf : 
+
+* Il faut se mettre dans le dossier qui contient le fichier *.adoc* et écrire : 
+
+** directement dans son terminal si on est sous *Linux* 
+** dans le terminal en passant par *RubyInstaller* si on est sous *Windows*
+
+et taper `asciidoctor-pdf <nom_du_fichier>`
+
+Commande pour convertir un fichier en asciidoctor en html : 
+
+* Il faut se mettre dans le dossier qui contient le fichier *.adoc* et écrire : 
+
+** directement dans son terminal si on est sous *Linux* 
+** dans le terminal en passant par *RubyInstaller* si on est sous *Windows*
+
+et taper `asciidoctor <nom_du_fichier>`

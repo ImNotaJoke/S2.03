@@ -1,0 +1,50 @@
+= Compte Rendu N°1
+
+:description: Rendu de la semaine 4
+:doctype: book
+:stylesheet: css/style.css
+:encoding: utf-8
+:lang: fr
+:experimental:
+:icons: font
+:data-uri:
+:toc: left
+
+[[repartition]]
+== Introduction 
+=== Équipes
+
+Cette SAÉ se fait par équipe donc nous avons constituer une #équipe de 3# :
+--
+* _Sebastian Novak_
+** sebastian.novak.etu@univ-lille.fr
+** Groupe D 
+
+* _GAVOILLE florian_
+** florian.gavoille.etu@univ-lille.fr; 
+** Groupe D 
+
+* _Cerdan sulivan_
+** cerdan.sulivan.etu@univ-lille.fr
+** Groupe D 
+--
+
+=== Semainier
+
+[%header, cols="^.^h,.^3,^.^,^.^", stripes=hover]
+|====
+^.^| Semaine ^.^| Étape ^.^| Suivi (1h) | Rendu 
+| 1-S06 | Préparation VM par pré-configuration | X |
+| 2-S07 | Apprentissage balisage léger - base | |
+| 3-S08 | vacance 2+|
+| 4-S09 | Recherche / étude applications clientes | X | X
+| 5-S10 | ((Gitea)) : installation & utilisation du service | |
+| 6-S11 | Apprentissage balisage léger - style + export | X |
+| 7-S12 | - | | X
+|====
+
+
+:sectnum:
+include::semaine1.adoc[]
+include::semaine2.adoc[]
+include::semaine3.adoc[]
