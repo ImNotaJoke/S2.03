@@ -1,11 +1,13 @@
-= Rapport SAE 2.03 - Semaine 3
+
 :icons: font
 :author: Florian GAVOILLE, Sebastian NOVAK et Sulivan CERDAN
 :email: florian.gavoille.etu@univ-lille.fr - sebastian.novak.etu@univ-lille.fr - sulivan.cerdan.etu@univ-lille.fr
 
+== Rapport SAE 2.03 - Semaine 3 
+
 == [red]#1.Configuration de Git# 
 
-image::Commandes_Git.png[]
+image::img/Commandes_Git.png[]
 
 *Les deux premières commandes permettent de s'identifier à notre compte git. Le paramètre --global permet de sauvegarder cette configuration sans devoir la remettre à chaque connexion.*
 
@@ -27,11 +29,11 @@ git gui
 ```
 Voici l'interface de git-gui avec une explication brève de l'interface :
 
-image::photo 1.png[gitk,600,100]
+image::img/photo 1.png[gitk,600,100]
 
 De même pour l'interface de gitk :
 
-image::photo 2.png[gitgui,600,100] 
+image::img/photo 2.png[gitgui,600,100] 
 
 == [red]#3.Autres interfaces#
 
@@ -47,7 +49,7 @@ sudo apt install ./gitkraken-amd64.deb
 
 Voici une image de l'interface de gitkraken : 
 
-image::gitkraken.png[gitkraken,600,100]
+image::img/gitkraken.png[gitkraken,600,100]
 
 
 === Comparaison a gitk et git-gui :

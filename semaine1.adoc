@@ -207,11 +207,11 @@ Fun Fact : La recherche de ces commandes nous a mene sur un forum Google
 
 Le fichier ressemblera a ceci : 
 
-image::applis.png[]
+image::img/applis.png[]
 
 *Fig1 : Ajout des applis.*
 
-image::sudo.png[]
+image::img/sudo.png[]
 
 *Fig2 : Ajout de l'user au groupe audio, cdrom, video et sudo.*
 
