@@ -6,39 +6,39 @@
 Réponses aux questions et commandes effectuées
 
 === Configuration matérielle dans VirtualBox
-*[underline]#Question 1 :#* +
+*[underline]#Question 1 : Que signifie "64-bit" dans "Debian 64-bit" ?#* +
 Le `64 bit` dans `Debian 64 bit` indique que cette version de l'OS peut accéder à un total de *2^64* adresses mémoires, soit *16 milliards de gigaoctets* de mémoire. D'un point de vue matériel, les systèmes _32 bit_ peuvent avoir un maximum de 4 Go de RAM, alors que les systèmes _64 bit_ n'ont pas réellement de limitefootnote:[Il est impossible d'avoir 16 milliards de giga octet de RAM à l'heure actuelle] +
-https://learn.microsoft.com/en-us/answers/questions/1610861/whats-the-difference-between-32-bit-and-64-bit[Source]
+https://learn.microsoft.com/en-us/answers/questions/1610861/whats-the-difference-between-32-bit-and-64-bit[Source : Microsoft, différences entre 32 bits et 64 bits]
 
 [NOTE]
 Les ordinateurs et OS récents fonctionnent sur une architecture *64 bits*
 
-*[underline]#Question 2 :#* +
+*[underline]#Question 2 : Quelle est la configuration réseau utilisée par défaut ?#* +
 Le mode de connexion utilisé par défaut par _Virtualbox_ est le *NAT*. Cette méthode permet de créer un réseau local virtuel propre à la VM et dont Virtualbox est le routeur. Autrement dit, sur le réseau local de la machine physique, la VM n'aura pas d'adresse IP attribuée, la seule adresse qui lui sera attribuée sera au sein du réseau virtuel créé.footnote:[Cette méthode peut être contournée en ajoutant une règle de redirection de port dans la configuration de la machine virtuelle] +
-https://www.it-connect.fr/comprendre-les-differents-types-de-reseaux-virtualbox/[Source]
+https://www.it-connect.fr/comprendre-les-differents-types-de-reseaux-virtualbox/[Source : IT Connect, comprendre les différents types de réseaux VirtualBox]
 
 [NOTE]
 Il existe d'autres manières de configuration réseau, pas par défaut et *plus complexes*, plus optimisées que le *NAT*
 
-*[underline]#Question 3 :#* +
+*[underline]#Question 3 : Quel est le nom du fichier XML contenant la configuration de votre machine ?#* +
 Le fichier de configuration s'appelle `sae203.vbox` et se trouve dans le dossier `/usr/local/virtual_machine/infoetu/login/vbox_vms/sae203`. Il est écrasé à chaque sauvegarde de la machine. +
-https://docs.oracle.com/en/virtualization/virtualbox/6.0/admin/vboxconfigdata.html[Source]
+https://docs.oracle.com/en/virtualization/virtualbox/6.0/admin/vboxconfigdata.html[Source : Documentation Virtualbox]
 
-*[underline]#Question 4 :#* +
+*[underline]#Question 4 : Sauriez-vous modifier directement ce fichier de configuration pour mettre 2 processeurs à votre machine ?#* +
 Il *n'est pas recommandé* de modifier la configuration de la VM depuis le fichier *XML*. La documentation officielle préconise de modifier via l'interface graphique ou le terminal. +
-https://docs.oracle.com/en/virtualization/virtualbox/7.0/user/vboxmanage.html[Source]
+https://docs.oracle.com/en/virtualization/virtualbox/7.0/user/vboxmanage.html[Source : Documentation Virtualbox]
 
 == Installation OS de base
 
-*[underline]#Question 1 :#* +
+*[underline]#Question 1 : Qu'est-ce qu'un fichier iso bootable ?#* +
 Un fichier `ISO`, du format ISO 9660 ou 13346, contient *toutes les données que l'on souhaite transférer sans les compresser* (contrairement à un fichier d'archive). Il contient fréquemment *toutes les données* et la *structure* nécessaires pour lancer un système d'exploitation ou un programme depuis un support externe (CD, DVD, Clé USB). +
-https://www.ionos.fr/digitalguide/serveur/know-how/quest-ce-quun-fichier-iso[Source]
+https://www.ionos.fr/digitalguide/serveur/know-how/quest-ce-quun-fichier-iso[Source : Ionos, qu'est-ce qu'un fichier iso ?]
 
-*[underline]#Question 2 :#* +
-*MATE* et *GNOME* sont des *environnements graphiques* utilisés principalement sur *[red]#Debian#*. Ils définissent comment les informations seront *affichés* à l'écran et le *style* de ces derniers. Autrement dit, l'environnement graphique définit le comportement de *l'interface graphique*.
-https://fr.wikipedia.org/wiki/GNOME[Source]
+*[underline]#Question 2 : Qu'est-ce que MATE ? GNOME ?#* +
+*MATE* et *GNOME* sont des *environnements graphiques* utilisés principalement sur *[red]#Debian#*. Ils définissent comment les informations seront *affichés* à l'écran et le *style* de ces derniers. Autrement dit, l'environnement graphique définit le comportement de *l'interface graphique*. +
+https://fr.wikipedia.org/wiki/GNOME[Source : Wikipedia, GNOME]
 
-*[underline]#Question 3 :#* +
+*[underline]#Question 3 : Qu'esst-ce qu'un serveur WEB ?#* +
 Un serveur Web a différentes définitions, l'une d'un point de vue *logiciel*, l'autre *matériel*. +
 
 Software (logiciel):: Un serveur Web d'un point de vue _logiciel_ contient différents *fragments* qui contrôlent la façon dont l'utilisateur peut accéder aux fichiers hébergés. Il comprend au minimum un *serveur HTTP* qui contient les url et le protocole HTTP. +
@@ -49,19 +49,19 @@ Il y a deux types de serveurs web :
 [horizontal]
 Statique:: Composé d'un *ordinateur* et d'un *serveur HTTP*, il envoie les fichiers hébergés *tels quels* au navigateur.
 Dynamique:: Il contient, en plus du serveur statique, des *composants logiciels*, comme des _serveurs d'applications_ ou des _bases de données_. Il *met à jour les données* avant de les envoyer au serveur via HTTP.
-https://developer.mozilla.org/fr/docs/Learn_web_development/Howto/Web_mechanics/What_is_a_web_server[Source]
+https://developer.mozilla.org/fr/docs/Learn_web_development/Howto/Web_mechanics/What_is_a_web_server[Source : Mozilla Developer Network]
 
-*[underline]#Question 4 :#* +
+*[underline]#Question 4 : Qu'est-ce qu'un serveur SSH ?#* +
 Un serveur SSH établit un lien *sécurisé* entre un utilisateur et un serveur. Il permet *d'accéder* à des fichiers sur un serveur, qui seront *chiffrés* durant le transfert, et *d'effectuer des commandes* à distance. +
-https://www.hostinger.fr/tutoriels/ssh-linux[Source]
+https://www.hostinger.fr/tutoriels/ssh-linux[Source : Hostinger, tutoriel SSH Linux]
 
-*[underline]#Question 5 :#* +
+*[underline]#Question 5 : Qu'est-ce qu'un serveur mandataire ?#* +
 Un _serveur mandataire_ (ou _proxy_) est un programme *intermédiaire* utilisé lors de la navigation sur internet. En plus de *faciliter* l'accès au *web*, il peut *recevoir* les demandes du client et *retourner* les réponses. Dans certains cas, il peut aussi *transmettre* des requêtes. Il existe deux types de proxy : +
 [horizontal]
 Proxy direct:: Il gère les demandes *depuis et vers n'importe où sur internet.* +
 Proxy inverse:: Il prend des *requêtes* d'internet pour les *envoyer* vers un serveur d'un _réseau interne._ +
 
-https://developer.mozilla.org/fr/docs/Glossary/Proxy_server[Source]
+https://developer.mozilla.org/fr/docs/Glossary/Proxy_server[Source : Mozilla Developer Network]
 
 === Sudo
 
@@ -73,7 +73,7 @@ Commandes utilisées :
 sudo usermod -aG sudo user
 ----
 
-=> Afficher les groups du `user`
+=> Afficher les groupes du `user`
 [source:bash]
 ----
 groups user
@@ -81,7 +81,7 @@ groups user
 
 == Suppléments invité
 
-*[underline]#Question 1 :#* +
+*[underline]#Question 1 : Quel est la version du noyau de Linux utilisé par votre VM ?#* +
 Pour récupérer la version de notre noyau, nous pouvons effectuer la commande suivante dans un terminal :
 [source:bash]
 ----
@@ -89,7 +89,7 @@ uname -r
 ----
 On remarque que notre noyau est sur la version 6.1.0-30-amd64.
 
-*[underline]#Question 2 :#* +
+*[underline]#Question 2 : A quoi servent les suppléments invités ?#* +
 Les compléments invités permettent d'améliorer l'utilisation de virtualbox avec :
 [%header, cols=2*]
 |===
@@ -109,22 +109,22 @@ Les compléments invités permettent d'améliorer l'utilisation de virtualbox av
 |===
 
 Cette liste est non exhaustive mais constitue les principaux changements. +
-https://www.virtualbox.org/export/43085/vbox/trunk/doc/manual/fr_FR/user_GuestAdditions.xml[Source]
+https://www.virtualbox.org/export/43085/vbox/trunk/doc/manual/fr_FR/user_GuestAdditions.xml[Source : site officiel de Virtualbox]
 
-*[underline]#Question 3 :#* +
+*[underline]#Question 3 : A quoi sert la commande mount ?#* +
 La commande `mount` permet d'**attacher** une partition *externe* au système (pouvant être un disque externe comme une autre partition du disque principal) au *système de fichier* `/`. +
 Un *exemple* simple est lorsque l'on sépare le `/home` de la partition `/`, on crée une partition externe qui sera *montée* à chaque lancement et rattachée au fichier `/home`. +
 Dans notre cas, on souhaite accéder aux fichiers contenus dans le CD-ROM. Pour cela, on va définir le dossier `/mnt` comme point de montage, nous permettant d'accéder aux fichiers du CD-ROM par `/mnt`. +
 Source : `man mount`
 
 == Quelques questions sur la documentation [red]#Debian#
-*[underline]#Question 1 :#* +
+*[underline]#Question 1 : Qu'est-ce que le projet Debian ? D'où vient le nom ?#* +
 [red]#Debian# est une distribution *GNU Linux* qui se veut _libre_ et de _qualité supérieure_. Développé entièrement *bénévolement*, la distribution [red]#Debian# est *stable*, *complète* footnote:[La documentation parle de presque 65 000 paquets de logiciels disponibles à l'installation], *gratuite* tant à l'utilisation qu'à l'amélioration et la redistribution et *active* grâce au travail régulier de plus de *1600 bénévoles*. +
 Le nom [red]#Debian# vient de la contraction de **Deb**ra et *Ian* Murdock, les deux créateurs originels du projet. 
 
-https://www.debian.org/doc/manuals/debian-faq/basic-defs.en.html[Source]
+https://www.debian.org/doc/manuals/debian-faq/basic-defs.en.html[Source : Documentation debian, FAQ]
 
-*[underline]#Question 2 :#* +
+*[underline]#Question 2 : Il existe 3 durées de prises en charge de ces versions : la durée minimale, la durée en support Long terme et la durée en support long terme étendue. Quelles sont les durées de ces prises en charge ?#* +
 Il y a *3 équipes* support différentes pour les différentes durées de prise en charge :
 
 [red]#Debian# stable support:: L'équipe chargée du *support* des *dernières version stables* de [red]#Debian#. Cette équipe est composée des *équipes de sécurité et de Release de [red]#Debian#* et s'occupent de mettre à jour la dernière version pour la *maintenir stable*. Durée : _environ 3 ans_
@@ -135,22 +135,23 @@ https://wiki.debian.org/LTS[Source LTS et Debian Stable] +
 https://wiki.debian.org/LTS/Extended[Source ELTS] +
 https://wiki.debian.org/DebianReleases[Source Releases]
 
-*[underline]#Question 3 :#* +
+*[underline]#Question 3 : Pendant combien de temps les mises à jour de sécurité sont-elles fournies ?#* +
 La durée de vie d'une version dépend de l'arrivée des *équipes support, LTS et ELTS*. En effet, les versions *avant la 2.0* n'ont pas reçu de support. *Les versions avant [red]#Debian# 6* n'ont reçu que du support pendant *3 ans ou moins*, assuré par les *équipes release et sécurité* [red]#Debian#. La *version 2.1* est une excpetion car elle a reçu du support LTS pendant... _1 mois seulement_. L'équipe *LTS* n'a ensuite plus été sollicité jusqu'à la version *[red]#Debian# 6*, qui a été *la première* à recevoir *2 ans de support LTS*, amenant sa durée de vie à *5 ans*. *[red]#Debian# 7* a ensuite inauguré *l'ELTS* avec *2 ans de support supplémentaires*, amenant sa durée de vie à *7 ans*. Les *version ultérieures* ont reçu et recevront les durées de support citées précédemment pour atteindre *10 ans* de durée de vie.
 
 _Les sources sont les mêmes que pour la question 2_
 
-*[underline]#Question 4 :#* +
+*[underline]#Question 4 : Combien de version au minimum sont activement maintenues par Debian ?#* +
 Il y a au minimum *1 version* activement maintenue par [red]#Debian#.
-https://wiki.debian.org/DebianReleases[Source]
+https://wiki.debian.org/DebianReleases[Source : Documentation Debian, page des releases]
 
-*[underline]#Question 5 :#* +
+*[underline]#Question 5 : Chaque distribution majeur possède un nom de code différent. Par exemple, la version majeur actuelle se nomme bookworm. D'où viennent les noms de code données aux distributions ?#* +
 Les noms de code sont basés sur les *noms des personnages* de *Toy Story*. En effet, la personne ayant repris le lead du projet [red]#Debian# après Ian Murdock, *Bruce Perens*, travaillait à *Pixar*, le studio à l'origine de la saga Toy Story. C'est ainsi qu'on retrouve tous les personnages de la série dans les noms de version [red]#Debian#.
 
-https://wiki.debian.org/DebianBuzz[Source]
+https://wiki.debian.org/DebianBuzz[Source : Documentation de la version Buzz]
 
-*[underline]#Question 6 :#* +
-Il y a *9 architectures* prises en compte :
+*[underline]#Question 6 : L'un des atouts de Debian fut le nombre d'architectures officiellement prises en charge. Combien et lesquelles sont prises en charge par la version Bullseye ?#* +
+
+Il y a *9 architectures* prises en charge :
 
 * amd64
 * i386
@@ -162,17 +163,17 @@ Il y a *9 architectures* prises en compte :
 * mipsel
 * mips64el
 
-https://wiki.debian.org/DebianBullseye[Source]
+https://wiki.debian.org/DebianBullseye[Source : Documentation Debian, page de la release Bullseye]
 
-*[underline]#Question 7 :#* +
+*[underline]#Question 7 : Informations sur la première version avec un nom de code :#* +
 La première version avec un nom de code était *[red]#Debian# 1.1*, sous le nom de *Buzz* pour Buzz l'éclair, a été annoncée le *17 juin 1996*. Elle n'aura duré que quelques mois puisque la version Rex la remplacera en décembre de la même année.
 
-https://wiki.debian.org/DebianBuzz[Source]
+https://wiki.debian.org/DebianBuzz[Source : Documentation Debian, page de la release Buzz]
 
-*[underline]#Question 8 :#* +
+*[underline]#Question 8 : Informations concernant la dernière version de Debian annoncée#* +
 La dernière version annoncée à ce jour est *[red]#Debian# 15* sous le nom de *Duke*, qui a été annoncée le *22 janvier 2025*.
 
-https://wiki.debian.org/DebianDuke[Source]
+https://wiki.debian.org/DebianDuke[Source : Documentation Debian, page de la release Duke]
 
 == _2. Tutoriel pour l'installation d'une VM automatisée :_
 
