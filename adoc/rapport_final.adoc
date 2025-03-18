@@ -1,6 +1,6 @@
-= Compte Rendu N°1
+= Compte Rendu final
 
-:description: Rendu de la semaine 4
+:description: Rendu de la semaine final
 :doctype: book
 :stylesheet: css/style.css
 :encoding: utf-8
@@ -9,8 +9,13 @@
 :icons: font
 :data-uri:
 :toc: left
+:chapter-signifier: Semaine
 
 [[repartition]]
+
+[.pagebreak]
+'''
+
 == Introduction 
 === Équipes
 
@@ -46,5 +51,12 @@ Cette SAÉ se fait par équipe donc nous avons constituer une #équipe de 3# :
 
 :sectnum:
 include::semaine1.adoc[]
+
 include::semaine2.adoc[]
+
+include::vacances.adoc[]
+
 include::semaine3.adoc[]
+
+include::semaine4.adoc[]
+:sectnum!:

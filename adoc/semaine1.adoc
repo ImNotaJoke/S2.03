@@ -28,7 +28,7 @@ https://docs.oracle.com/en/virtualization/virtualbox/6.0/admin/vboxconfigdata.ht
 Il *n'est pas recommandé* de modifier la configuration de la VM depuis le fichier *XML*. La documentation officielle préconise de modifier via l'interface graphique ou le terminal. +
 https://docs.oracle.com/en/virtualization/virtualbox/7.0/user/vboxmanage.html[Source : Documentation Virtualbox]
 
-== Installation OS de base
+=== Installation OS de base
 
 *[underline]#Question 1 : Qu'est-ce qu'un fichier iso bootable ?#* +
 Un fichier `ISO`, du format ISO 9660 ou 13346, contient *toutes les données que l'on souhaite transférer sans les compresser* (contrairement à un fichier d'archive). Il contient fréquemment *toutes les données* et la *structure* nécessaires pour lancer un système d'exploitation ou un programme depuis un support externe (CD, DVD, Clé USB). +
@@ -79,7 +79,7 @@ sudo usermod -aG sudo user
 groups user
 ----
 
-== Suppléments invité
+=== Suppléments invité
 
 *[underline]#Question 1 : Quel est la version du noyau de Linux utilisé par votre VM ?#* +
 Pour récupérer la version de notre noyau, nous pouvons effectuer la commande suivante dans un terminal :
@@ -175,7 +175,7 @@ La dernière version annoncée à ce jour est *[red]#Debian# 15* sous le nom de 
 
 https://wiki.debian.org/DebianDuke[Source : Documentation Debian, page de la release Duke]
 
-== _2. Tutoriel pour l'installation d'une VM automatisée :_
+=== _Tutoriel pour l'installation d'une VM automatisée :_
 
 [.text-center] 
  Afin de mener a bout ce processus vous aurez besoin de :
@@ -208,11 +208,11 @@ Fun Fact : La recherche de ces commandes nous a mene sur un forum Google
 
 Le fichier ressemblera a ceci : 
 
-image::img/applis.png[]
+image::../img/applis.png[]
 
 *Fig1 : Ajout des applis.*
 
-image::img/sudo.png[]
+image::../img/sudo.png[]
 
 *Fig2 : Ajout de l'user au groupe audio, cdrom, video et sudo.*
 
@@ -221,3 +221,5 @@ image::img/sudo.png[]
 * [ ] Demarrer la VM et attendre que l'installation se complete
 
 * [*] Et voila ! Vous avez une VM installee automatiquement
+[.pagebreak]
+'''

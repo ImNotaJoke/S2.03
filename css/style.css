@@ -1,0 +1,20 @@
+#toc {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+#toc ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#toc a {
+    color: #007acc;
+    text-decoration: none;
+}
+
+#toc a:hover {
+    text-decoration: underline;
+}
