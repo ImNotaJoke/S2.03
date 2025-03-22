@@ -1,0 +1,42 @@
+== Conclusion
+
+Ce projet nous a offert une opportunité d’apprentissage riche et diversifiée, nous plongeant dans des domaines variés tels que la gestion de machines virtuelles, l’administration système, le contrôle de version avec Git et l’utilisation de services collaboratifs comme Gitea. 
+
+=== Compétences acquises  
+
+Au fil des semaines, nous avons développé plusieurs compétences essentielles :  
+
+- **Virtualisation et administration système**  
+  Nous avons appris à configurer et gérer des machines virtuelles sous VirtualBox, en optimisant leur performance et leur connectivité réseau. L’installation et la configuration d’un système Debian, avec ses différents composants (serveur SSH, gestion des paquets, permissions sudo), ont renforcé nos connaissances en administration Linux.  
+
+- **Utilisation d’AsciiDoc pour la documentation**  
+  Rédiger l’ensemble de notre compte rendu en AsciiDoc nous a permis de découvrir et de maîtriser un langage de balisage léger adapté à la création de documentation technique. Nous avons intégré des éléments structurants comme des titres, des tableaux, des blocs de code et des images, tout en apprenant à générer des fichiers HTML et PDF.  
+
+- **Gestion de versions avec Git et Gitea**  
+  La mise en place et l’utilisation de Git en ligne de commande, couplées à la découverte d’interfaces graphiques comme GitKraken, nous ont permis de mieux comprendre l’importance du versioning dans un projet collaboratif. L’installation et la configuration de Gitea nous ont également donné un aperçu des outils auto-hébergés de gestion de code.  
+
+- **Automatisation et bonnes pratiques**  
+  Grâce à l’apprentissage du fichier *preseed.cfg*, nous avons automatisé l’installation d’une machine Debian, réduisant ainsi le temps et les erreurs humaines. Ce processus nous a sensibilisés à l’intérêt de l’automatisation dans le déploiement d’infrastructures.  
+
+=== Défis rencontrés et solutions  
+
+Nous avons été confrontés à plusieurs défis techniques tout au long du projet :  
+
+- **Problèmes de compatibilité et de configuration**  
+  Certaines installations de logiciels ne fonctionnaient pas immédiatement comme prévu (exemple : dépendances manquantes sous Debian). Grâce à des recherches dans la documentation et sur des forums techniques, nous avons appris à diagnostiquer et résoudre ces problèmes.  
+
+- **Compréhension et structuration de la documentation**  
+  La rédaction d’une documentation technique claire et exhaustive a été un exercice exigeant. Nous avons dû organiser les informations de manière logique, tout en rendant le document lisible et accessible.  
+
+- **Travail collaboratif et gestion du temps**  
+  Travailler en équipe a nécessité une bonne répartition des tâches et une communication efficace. La gestion du temps a également été un enjeu majeur, nous obligeant à structurer notre avancement de manière progressive pour respecter les échéances.  
+
+=== Bilan et perspectives  
+
+En rétrospective, cette SAE a été une expérience formatrice et concrète. Elle nous a permis d’appliquer des concepts théoriques dans un cadre pratique, nous préparant ainsi aux défis futurs du monde professionnel.  
+
+Nous ressortons de ce projet avec une meilleure maîtrise des outils utilisés et une plus grande autonomie dans la résolution de problèmes techniques. Cette expérience nous servira de base pour les projets à venir, notamment dans les domaines de l’administration système, du développement collaboratif et de l’automatisation des infrastructures.  
+
+Nous sommes fiers du travail accompli et de notre progression tout au long de cette SAE.  
+
+*_Équipe D_*

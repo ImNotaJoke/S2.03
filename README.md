@@ -26,15 +26,15 @@ positionnez-vous dans un terminal et a l'emplacement exact du fichier .adoc en s
 **Manuellement**
 pour avoir le pdf, vous tapperez :
 ```
-asciidoctor-pdf -a toc rapport_final.adoc
+asciidoctor-pdf -a pdf-style=yml/theme.yml -a toc adoc/rapport_final.adoc -o "rendu/rapport_final.pdf"
 ```
 et pour le fichier html :
 ```
-asciidoctor -a toc rapport_final.adoc
+asciidoctor -a toc adoc/rapport_final.adoc -o "rendu/rapport_final.html"
 ``` 
 
 **Automatiquement**  
- / ! \ L'execution se fait dans un terminal bash, meme sur window veuillez donc a utiliser un outil comme Putty ou bien le terminal bash fourni par git.  
+ / ! \ L'execution se fait dans un terminal bash, même sur window veuillez donc à utiliser un outil comme Putty ou bien le terminal bash fourni par git.  
 Nous vous avons fournit un fichier .sh a executer qui vous convertiras directement le fichier adoc en pdf et html.
 
 

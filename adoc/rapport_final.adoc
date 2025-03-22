@@ -49,14 +49,25 @@ Cette SAÉ se fait par équipe donc nous avons constituer une #équipe de 3# :
 |====
 
 
+[%always]
+<<<
+
 :sectnum:
 include::semaine1.adoc[]
-
+[%always]
+<<<
 include::semaine2.adoc[]
-
+[%always]
+<<<
 include::vacances.adoc[]
-
+[%always]
+<<<
 include::semaine3.adoc[]
-
+[%always]
+<<<
 include::semaine4.adoc[]
+[%always]
+<<<
+include::semaine5.adoc[]
+
 :sectnum!:
