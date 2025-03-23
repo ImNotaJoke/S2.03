@@ -17,6 +17,9 @@ Etape 2 : Dans le menu de configuration, allez dans la categorie [red]#Reseau# e
 image::../img/Redirection2.png[500,400]
 *Fig 2 : Acceder a la rubrique reseau*
 
+[%always]
+<<<  
+
 Etape 3 : Dans le menu de redirection des ports, appuyez sur le bouton d'ajout (entoure en [red]#rouge#) et rentrer les memes elements que dans la *Fig 3* :
 
 image::../img/Redirection3.png[500,400]
@@ -36,9 +39,13 @@ Un [blue]#fork# est un nouveau logiciel cree a partir du code source d'un logici
 [gray]#Sources# :
   https://docs.gitea.com[Documentation de Gitea] et https://fr.wikipedia.org/wiki/Fork_(développement_logiciel)[Wikipedia : Fork]
 
+
+[%always]
+<<<  
 == Installation de Gitea
 
 Cette partie a été rédigée à l'aide de la documentation officielle de Gitea, disponible via https://docs.gitea.io/en-us/install-from-binary/[ce lien].
+
 
 === Télécharger le fichier
 
@@ -75,6 +82,9 @@ adduser \
    git
 ----
 
+[%always]
+<<<
+  
 === Préparation de l'environnement
 Certains dossiers, qui nous seront utiles plus tard, sont à créer et configurer.
 

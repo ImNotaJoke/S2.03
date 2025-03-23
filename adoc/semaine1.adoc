@@ -34,7 +34,9 @@ https://docs.oracle.com/en/virtualization/virtualbox/7.0/user/vboxmanage.html[So
 Un fichier `ISO`, du format ISO 9660 ou 13346, contient *toutes les données que l'on souhaite transférer sans les compresser* (contrairement à un fichier d'archive). Il contient fréquemment *toutes les données* et la *structure* nécessaires pour lancer un système d'exploitation ou un programme depuis un support externe (CD, DVD, Clé USB). +
 https://www.ionos.fr/digitalguide/serveur/know-how/quest-ce-quun-fichier-iso[Source : Ionos, qu'est-ce qu'un fichier iso ?]
 
-[.pagebreak]
+[%always]
+<<<
+
 *[underline]#Question 2 : Qu'est-ce que MATE ? GNOME ?#* +
 *MATE* et *GNOME* sont des *environnements graphiques* utilisés principalement sur *[red]#Debian#*. Ils définissent comment les informations seront *affichés* à l'écran et le *style* de ces derniers. Autrement dit, l'environnement graphique définit le comportement de *l'interface graphique*. +
 https://fr.wikipedia.org/wiki/GNOME[Source : Wikipedia, GNOME]
@@ -64,7 +66,9 @@ Proxy inverse:: Il prend des *requêtes* d'internet pour les *envoyer* vers un s
 
 https://developer.mozilla.org/fr/docs/Glossary/Proxy_server[Source : Mozilla Developer Network]
 
-[.pagebreak]
+[%always]
+<<<  
+
 === Sudo
 
 Commandes utilisées :
@@ -113,7 +117,8 @@ Les compléments invités permettent d'améliorer l'utilisation de virtualbox av
 Cette liste est non exhaustive mais constitue les principaux changements. +
 https://www.virtualbox.org/export/43085/vbox/trunk/doc/manual/fr_FR/user_GuestAdditions.xml[Source : site officiel de Virtualbox]
 
-[.pagebreak]
+[%always]
+<<<
 *[underline]#Question 3 : A quoi sert la commande mount ?#* +
 La commande `mount` permet d'**attacher** une partition *externe* au système (pouvant être un disque externe comme une autre partition du disque principal) au *système de fichier* `/`. +
 Un *exemple* simple est lorsque l'on sépare le `/home` de la partition `/`, on crée une partition externe qui sera *montée* à chaque lancement et rattachée au fichier `/home`. +
@@ -138,7 +143,7 @@ https://wiki.debian.org/LTS[Source LTS et Debian Stable] +
 https://wiki.debian.org/LTS/Extended[Source ELTS] +
 https://wiki.debian.org/DebianReleases[Source Releases]
 
-[.pagebreak]
+
 *[underline]#Question 3 : Pendant combien de temps les mises à jour de sécurité sont-elles fournies ?#* +
 La durée de vie d'une version dépend de l'arrivée des *équipes support, LTS et ELTS*. En effet, les versions *avant la 2.0* n'ont pas reçu de support. *Les versions avant [red]#Debian# 6* n'ont reçu que du support pendant *3 ans ou moins*, assuré par les *équipes release et sécurité* [red]#Debian#. La *version 2.1* est une excpetion car elle a reçu du support LTS pendant... _1 mois seulement_. L'équipe *LTS* n'a ensuite plus été sollicité jusqu'à la version *[red]#Debian# 6*, qui a été *la première* à recevoir *2 ans de support LTS*, amenant sa durée de vie à *5 ans*. *[red]#Debian# 7* a ensuite inauguré *l'ELTS* avec *2 ans de support supplémentaires*, amenant sa durée de vie à *7 ans*. Les *version ultérieures* ont reçu et recevront les durées de support citées précédemment pour atteindre *10 ans* de durée de vie.
 
@@ -169,6 +174,8 @@ Il y a *9 architectures* prises en charge :
 
 https://wiki.debian.org/DebianBullseye[Source : Documentation Debian, page de la release Bullseye]
 
+[%always]
+<<<
 *[underline]#Question 7 : Informations sur la première version avec un nom de code :#* +
 La première version avec un nom de code était *[red]#Debian# 1.1*, sous le nom de *Buzz* pour Buzz l'éclair, a été annoncée le *17 juin 1996*. Elle n'aura duré que quelques mois puisque la version Rex la remplacera en décembre de la même année.
 
@@ -225,5 +232,3 @@ image::../img/sudo.png[]
 * [ ] Demarrer la VM et attendre que l'installation se complete
 
 * [*] Et voila ! Vous avez une VM installee automatiquement
-[.pagebreak]
-'''
